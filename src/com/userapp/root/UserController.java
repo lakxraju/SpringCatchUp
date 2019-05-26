@@ -41,6 +41,6 @@ public class UserController {
 	public ResponseEntity<User> createUser(@Valid @RequestBody UserDTO user){
 		User userDO = UserMapper.toEntity(user);
 		userService.update(userDO);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 }
