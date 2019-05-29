@@ -19,7 +19,6 @@
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
-				
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>
